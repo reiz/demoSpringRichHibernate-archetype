@@ -1,0 +1,41 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich">
+<h:head>
+</h:head>
+<h:body>
+	
+	<f:loadBundle basename="gui.labels"   var="labels"  />
+	<f:loadBundle basename="gui.messages" var="messages" />
+	<h:form> 
+		<div align="center">			
+			<br/>
+			<div style="width: 320px;" align="center">
+				<h:messages showDetail="true" showSummary="true" />
+				<br/>
+				<br/>
+				Login with "admin" - "admin"
+				<br/>
+				<br/>
+			</div>			
+			<h:panelGrid columns="2" >
+				<h:outputText value="${symbol_pound}{labels['loginName']}"/>
+				<h:inputText value="${symbol_pound}{logInBean.loginName}" />
+				<h:outputText value="${symbol_pound}{labels['password']}"/>
+				<h:inputSecret value="${symbol_pound}{logInBean.password}"/>
+				<h:outputText value=" "/>
+				<h:commandButton action="${symbol_pound}{logInBean.doLogin}" value="${symbol_pound}{labels['login']}" />
+			</h:panelGrid>
+		  	<br/>
+		  	<br/>
+		  	<br/>
+		</div>
+	</h:form>	
+	
+</h:body>
+</html>

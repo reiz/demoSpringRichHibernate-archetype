@@ -1,0 +1,23 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+</h:head>
+<h:body>
+
+	<table width="100%" cellpadding="0px" cellspacing="0px" >
+		<tr>
+			<td align="center" style="padding-top: 0px; margin: 0px;">
+				<h:form id="mainNavForm" style="margin: 0px; padding: 0px;">
+					<h:commandLink action="${symbol_pound}{logOutBean.doLogout}" value="${symbol_pound}{labels['logout']}" /><br/>
+				</h:form>
+			</td>
+		</tr>
+	</table>
+
+</h:body>
+</html>

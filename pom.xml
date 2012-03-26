@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.ploin.archetype</groupId>
+  <artifactId>demoSpringRichHibernate-archetype</artifactId>
+  <version>1.2</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>demoSpringRichHibernate-archetype</name>
+  <description>This maven2 archetype contains a little sample web application with the Spring Framework 3.1.0.RELEASE, RichFaces 4.1.0.Final, Hibernate 3.3.0 and JSF 2.1.2</description> 
+	
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url></url>
+  </scm>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <developers>
+    <developer>
+      <id>r.reiz</id>
+      <name>Robert Reiz</name>
+      <url>http://robert-reiz.com</url>
+      <organization>VersionEye</organization>
+      <organizationUrl>http://versioneye.com</organizationUrl>
+      <roles>
+        <role>Product Manager</role>
+        <role>Software Architect</role>
+      </roles>
+      <timezone>-8</timezone>
+    </developer>
+  </developers>
+
+</project>
